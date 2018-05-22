@@ -11,7 +11,7 @@ namespace TodoApi
         {
             services.AddDbContext<TodoContext>(opt => opt.UseInMemoryDatabase("TodoList"));
             services.AddMvc();
-            var connectionString = Configuration.GetConnectionString("BlogContext");
+            //var connectionString = Configuration.GetConnectionString("BlogContext");
             //services.AddEntityFrameworkNpgsql().AddDbContext<BlogContext>(options => options.UseNpgsql(connectionString));
         }
 
